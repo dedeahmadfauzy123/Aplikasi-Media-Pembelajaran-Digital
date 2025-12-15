@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title> Video</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('asset/BG.png'); 
+        }
+    </style>
+    <script src="materi.js" defer></script> 
+</head>
+
+<body onload="loadMateriIframe()">
+    <div class="app-container">
+
+        <main style="flex-grow: 1; display: flex; flex-direction: column;">
+            
+            <img src="asset/JMATERI.png" alt="Materi Video Interaktif" class="app-image" style="max-width: 350px; margin-top: 1rem;">
+            
+            <div class="iframe-container">
+                <iframe 
+                    id="materiIframe" 
+                    src="" 
+                    style="width:100%;height:420px;border:none;" 
+                    title="Materi Video YouTube"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </main>
+        <a href="materi-index.html" class="app-button" style="margin-top: 1rem;">
+            <img src="asset/BACK.png" alt="Kembali ke Menu" class="button-img" style="max-width: 100px;">
+       </a>
+        </div>
+        <footer class="app-footer">
+            © 2025 Media Pembelajaran Digital – Dede Ahmad Fauzy.
+        </footer>       
+        </div>
+</body>
+</html>

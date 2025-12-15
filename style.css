@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --biru: #2563EB;
+    --abu: #6B7280;
+    --font-stack: 'Poppins', sans-serif;
+    --radius-lg: 1rem;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000; 
+    background-size: cover;
+    background-position: center;
+}
+
+.app-logo-fixed {
+    position: absolute; 
+    top: 20px;       
+    left: 20px;     
+    width: 60px;     
+    height: auto;
+    z-index: 1000;   
+}
+
+.app-container {
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto;
+    padding: 24px;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.nav-header {
+    margin-bottom: 1.5rem;
+    padding-top: 0; 
+    margin-right: 70px; 
+}
+
+@media (max-width: 600px) {
+    .app-logo-fixed {
+        top: 15px; 
+        left: 15px;
+        width: 50px; 
+    }
+
+.app-container { 
+        padding: 16px;
+    }
+.nav-header {
+        margin-right: 60px; 
+    }
+}
+.app-container {
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.app-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.app-button {
+    display: inline-block; 
+    padding: 0; 
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+    margin-bottom: 1rem;
+    color: transparent; 
+    font-size: 0;
+    line-height: 0;
+    
+    background-color: transparent; 
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: none; 
+}
+
+.app-button:active {
+    transform: scale(0.98); 
+}
+
+.button-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 150px; 
+}
+
+.home-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    min-height: 80vh; 
+}
+
+
+.menu-grid {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center;
+    gap: 13px; 
+    margin-top: 1.5rem;
+    flex-grow: 1;
+}
+
+.menu-grid .app-button {
+    width: 50%; 
+    max-width: 80px; 
+    flex-grow: 0; 
+    flex-shrink: 0;
+    margin-bottom: 0; 
+}
+
+.menu-grid a {
+    width: 100%; 
+    height: auto;
+}
+.menu-grid .button-img {
+    width: 100%; 
+    height: auto;
+}
+
+.bab-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 12px; 
+    margin-top: 1.5rem;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.bab-grid .app-button {
+    max-width: 100px; 
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.bab-grid .button-img {
+    width: 100%; 
+    height: auto;
+}
+
+.content-wrapper {
+    flex-grow: 1;
+    background-size: cover;
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+}
+
+.iframe-container {
+    background-color: #ffbd58; 
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+    margin-top: 1.5rem;
+    flex-grow: 1;
+}
+
+.app-footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.75rem;
+    color: var(--abu);
+    background-color: rgba(255,255,255,0.8); 
+    width: 100%; 
+    flex-shrink: 0; 
+}
+
+@media (max-width: 600px) {
+    .app-container { padding: 16px; }
+    .menu-grid {
+        grid-template-columns: 1fr; 
+    }
+}
